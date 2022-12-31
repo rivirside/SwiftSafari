@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5417A9452960E9810078BB82 /* Neural Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5417A9442960E9810078BB82 /* Neural Network.swift */; };
 		54A755B02960E84500E91DE4 /* SwiftSafariApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A755AF2960E84500E91DE4 /* SwiftSafariApp.swift */; };
 		54A755B22960E84500E91DE4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A755B12960E84500E91DE4 /* ContentView.swift */; };
 		54A755B42960E84600E91DE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54A755B32960E84600E91DE4 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5417A9442960E9810078BB82 /* Neural Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Neural Network.swift"; sourceTree = "<group>"; };
 		54A755AC2960E84500E91DE4 /* SwiftSafari.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftSafari.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54A755AF2960E84500E91DE4 /* SwiftSafariApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSafariApp.swift; sourceTree = "<group>"; };
 		54A755B12960E84500E91DE4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,6 +35,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5417A9422960E9540078BB82 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5417A9442960E9810078BB82 /* Neural Network.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5417A9432960E9640078BB82 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		54A755A32960E84500E91DE4 = {
 			isa = PBXGroup;
 			children = (
@@ -53,6 +70,8 @@
 			isa = PBXGroup;
 			children = (
 				54A755AF2960E84500E91DE4 /* SwiftSafariApp.swift */,
+				5417A9432960E9640078BB82 /* Views */,
+				5417A9422960E9540078BB82 /* Models */,
 				54A755B12960E84500E91DE4 /* ContentView.swift */,
 				54A755B32960E84600E91DE4 /* Assets.xcassets */,
 				54A755B52960E84600E91DE4 /* SwiftSafari.entitlements */,
@@ -139,6 +158,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5417A9452960E9810078BB82 /* Neural Network.swift in Sources */,
 				54A755B22960E84500E91DE4 /* ContentView.swift in Sources */,
 				54A755B02960E84500E91DE4 /* SwiftSafariApp.swift in Sources */,
 			);
