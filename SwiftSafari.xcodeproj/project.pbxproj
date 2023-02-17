@@ -8,6 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		5417A9452960E9810078BB82 /* Neural Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5417A9442960E9810078BB82 /* Neural Network.swift */; };
+		5417A98F296285D90078BB82 /* DataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5417A98E296285D90078BB82 /* DataStorage.swift */; };
+		5417A991296385EA0078BB82 /* NN Visualization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5417A990296385EA0078BB82 /* NN Visualization.swift */; };
+		5417A9932963B2420078BB82 /* Population.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5417A9922963B2420078BB82 /* Population.swift */; };
+		5417A9952963B2680078BB82 /* Mouse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5417A9942963B2680078BB82 /* Mouse.swift */; };
+		5417A9972963B2780078BB82 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5417A9962963B2780078BB82 /* Animal.swift */; };
+		5417A99B2963C6600078BB82 /* PongView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5417A99A2963C6600078BB82 /* PongView.swift */; };
+		5417A99E2963D2D50078BB82 /* Vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5417A99D2963D2D50078BB82 /* Vector.swift */; };
+		5417A9A22963D3220078BB82 /* TicTacToe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5417A9A12963D3220078BB82 /* TicTacToe.swift */; };
+		5417A9A429664D190078BB82 /* Organism.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5417A9A329664D190078BB82 /* Organism.swift */; };
+		5417A9A629665F640078BB82 /* Berries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5417A9A529665F640078BB82 /* Berries.swift */; };
+		5417A9A8296758110078BB82 /* MouseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5417A9A7296758110078BB82 /* MouseView.swift */; };
+		5417A9AA296759010078BB82 /* FieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5417A9A9296759010078BB82 /* FieldView.swift */; };
+		5417A9AC29675D000078BB82 /* BerryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5417A9AB29675D000078BB82 /* BerryView.swift */; };
 		54A755B02960E84500E91DE4 /* SwiftSafariApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A755AF2960E84500E91DE4 /* SwiftSafariApp.swift */; };
 		54A755B22960E84500E91DE4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A755B12960E84500E91DE4 /* ContentView.swift */; };
 		54A755B42960E84600E91DE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54A755B32960E84600E91DE4 /* Assets.xcassets */; };
@@ -16,6 +29,19 @@
 
 /* Begin PBXFileReference section */
 		5417A9442960E9810078BB82 /* Neural Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Neural Network.swift"; sourceTree = "<group>"; };
+		5417A98E296285D90078BB82 /* DataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStorage.swift; sourceTree = "<group>"; };
+		5417A990296385EA0078BB82 /* NN Visualization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NN Visualization.swift"; sourceTree = "<group>"; };
+		5417A9922963B2420078BB82 /* Population.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Population.swift; sourceTree = "<group>"; };
+		5417A9942963B2680078BB82 /* Mouse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mouse.swift; sourceTree = "<group>"; };
+		5417A9962963B2780078BB82 /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		5417A99A2963C6600078BB82 /* PongView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PongView.swift; sourceTree = "<group>"; };
+		5417A99D2963D2D50078BB82 /* Vector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vector.swift; sourceTree = "<group>"; };
+		5417A9A12963D3220078BB82 /* TicTacToe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToe.swift; sourceTree = "<group>"; };
+		5417A9A329664D190078BB82 /* Organism.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Organism.swift; sourceTree = "<group>"; };
+		5417A9A529665F640078BB82 /* Berries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Berries.swift; sourceTree = "<group>"; };
+		5417A9A7296758110078BB82 /* MouseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MouseView.swift; sourceTree = "<group>"; };
+		5417A9A9296759010078BB82 /* FieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldView.swift; sourceTree = "<group>"; };
+		5417A9AB29675D000078BB82 /* BerryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BerryView.swift; sourceTree = "<group>"; };
 		54A755AC2960E84500E91DE4 /* SwiftSafari.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftSafari.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54A755AF2960E84500E91DE4 /* SwiftSafariApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSafariApp.swift; sourceTree = "<group>"; };
 		54A755B12960E84500E91DE4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -39,6 +65,11 @@
 			isa = PBXGroup;
 			children = (
 				5417A9442960E9810078BB82 /* Neural Network.swift */,
+				5417A9922963B2420078BB82 /* Population.swift */,
+				5417A9A529665F640078BB82 /* Berries.swift */,
+				5417A9942963B2680078BB82 /* Mouse.swift */,
+				5417A9962963B2780078BB82 /* Animal.swift */,
+				5417A9A329664D190078BB82 /* Organism.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -46,8 +77,47 @@
 		5417A9432960E9640078BB82 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				54A755B12960E84500E91DE4 /* ContentView.swift */,
+				5417A9AB29675D000078BB82 /* BerryView.swift */,
+				5417A9A7296758110078BB82 /* MouseView.swift */,
+				5417A9A9296759010078BB82 /* FieldView.swift */,
+				5417A990296385EA0078BB82 /* NN Visualization.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		5417A9992963C6510078BB82 /* Pong */ = {
+			isa = PBXGroup;
+			children = (
+				5417A99A2963C6600078BB82 /* PongView.swift */,
+			);
+			path = Pong;
+			sourceTree = "<group>";
+		};
+		5417A99C2963D2C80078BB82 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				5417A98E296285D90078BB82 /* DataStorage.swift */,
+				5417A99D2963D2D50078BB82 /* Vector.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		5417A99F2963D3070078BB82 /* SideQuests */ = {
+			isa = PBXGroup;
+			children = (
+				5417A9A02963D3120078BB82 /* Tic Tac Toe */,
+				5417A9992963C6510078BB82 /* Pong */,
+			);
+			path = SideQuests;
+			sourceTree = "<group>";
+		};
+		5417A9A02963D3120078BB82 /* Tic Tac Toe */ = {
+			isa = PBXGroup;
+			children = (
+				5417A9A12963D3220078BB82 /* TicTacToe.swift */,
+			);
+			path = "Tic Tac Toe";
 			sourceTree = "<group>";
 		};
 		54A755A32960E84500E91DE4 = {
@@ -70,9 +140,10 @@
 			isa = PBXGroup;
 			children = (
 				54A755AF2960E84500E91DE4 /* SwiftSafariApp.swift */,
+				5417A99F2963D3070078BB82 /* SideQuests */,
 				5417A9432960E9640078BB82 /* Views */,
 				5417A9422960E9540078BB82 /* Models */,
-				54A755B12960E84500E91DE4 /* ContentView.swift */,
+				5417A99C2963D2C80078BB82 /* Utilities */,
 				54A755B32960E84600E91DE4 /* Assets.xcassets */,
 				54A755B52960E84600E91DE4 /* SwiftSafari.entitlements */,
 				54A755B62960E84600E91DE4 /* Preview Content */,
@@ -158,9 +229,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5417A9932963B2420078BB82 /* Population.swift in Sources */,
+				5417A9A429664D190078BB82 /* Organism.swift in Sources */,
+				5417A9972963B2780078BB82 /* Animal.swift in Sources */,
+				5417A9A629665F640078BB82 /* Berries.swift in Sources */,
+				5417A9AA296759010078BB82 /* FieldView.swift in Sources */,
+				5417A9A8296758110078BB82 /* MouseView.swift in Sources */,
+				5417A99E2963D2D50078BB82 /* Vector.swift in Sources */,
 				5417A9452960E9810078BB82 /* Neural Network.swift in Sources */,
+				5417A9952963B2680078BB82 /* Mouse.swift in Sources */,
+				5417A9AC29675D000078BB82 /* BerryView.swift in Sources */,
+				5417A9A22963D3220078BB82 /* TicTacToe.swift in Sources */,
 				54A755B22960E84500E91DE4 /* ContentView.swift in Sources */,
+				5417A991296385EA0078BB82 /* NN Visualization.swift in Sources */,
 				54A755B02960E84500E91DE4 /* SwiftSafariApp.swift in Sources */,
+				5417A99B2963C6600078BB82 /* PongView.swift in Sources */,
+				5417A98F296285D90078BB82 /* DataStorage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
