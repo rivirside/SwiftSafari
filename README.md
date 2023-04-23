@@ -22,6 +22,8 @@ To get started with SwiftSafari, you can either follow along with oen of the pro
 
 Once you have Xcode installed, you can clone the SwiftSafari repository to your local machine, or download the project as a zip file and then unzip it.
 
+I have included Playground projects that correspond to the individual tutorials. These are like checkpoints along the road and can be run independently to see what a given implementation looks like. The Xcode project is where I do my active development and I am still learning version control with GitHub so please be patient (thanks!)
+
 ### Contributing
 
 Contributions to SwiftSafari are welcome and encouraged! If you notice a bug, have an idea for a new feature, or want to improve the documentation, feel free to open an issue or submit a pull request.I really just want to ghelp grease the gears and get Swift chugging along the data science train!
