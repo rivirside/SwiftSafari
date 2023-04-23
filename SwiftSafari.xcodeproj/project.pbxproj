@@ -12,7 +12,6 @@
 		5417A991296385EA0078BB82 /* NN Visualization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5417A990296385EA0078BB82 /* NN Visualization.swift */; };
 		5417A9932963B2420078BB82 /* Population.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5417A9922963B2420078BB82 /* Population.swift */; };
 		5417A9952963B2680078BB82 /* Mouse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5417A9942963B2680078BB82 /* Mouse.swift */; };
-		5417A9972963B2780078BB82 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5417A9962963B2780078BB82 /* Animal.swift */; };
 		5417A99B2963C6600078BB82 /* PongView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5417A99A2963C6600078BB82 /* PongView.swift */; };
 		5417A99E2963D2D50078BB82 /* Vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5417A99D2963D2D50078BB82 /* Vector.swift */; };
 		5417A9A22963D3220078BB82 /* TicTacToe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5417A9A12963D3220078BB82 /* TicTacToe.swift */; };
@@ -33,7 +32,6 @@
 		5417A990296385EA0078BB82 /* NN Visualization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NN Visualization.swift"; sourceTree = "<group>"; };
 		5417A9922963B2420078BB82 /* Population.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Population.swift; sourceTree = "<group>"; };
 		5417A9942963B2680078BB82 /* Mouse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mouse.swift; sourceTree = "<group>"; };
-		5417A9962963B2780078BB82 /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 		5417A99A2963C6600078BB82 /* PongView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PongView.swift; sourceTree = "<group>"; };
 		5417A99D2963D2D50078BB82 /* Vector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vector.swift; sourceTree = "<group>"; };
 		5417A9A12963D3220078BB82 /* TicTacToe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToe.swift; sourceTree = "<group>"; };
@@ -68,7 +66,6 @@
 				5417A9922963B2420078BB82 /* Population.swift */,
 				5417A9A529665F640078BB82 /* Berries.swift */,
 				5417A9942963B2680078BB82 /* Mouse.swift */,
-				5417A9962963B2780078BB82 /* Animal.swift */,
 				5417A9A329664D190078BB82 /* Organism.swift */,
 			);
 			path = Models;
@@ -231,7 +228,6 @@
 			files = (
 				5417A9932963B2420078BB82 /* Population.swift in Sources */,
 				5417A9A429664D190078BB82 /* Organism.swift in Sources */,
-				5417A9972963B2780078BB82 /* Animal.swift in Sources */,
 				5417A9A629665F640078BB82 /* Berries.swift in Sources */,
 				5417A9AA296759010078BB82 /* FieldView.swift in Sources */,
 				5417A9A8296758110078BB82 /* MouseView.swift in Sources */,
