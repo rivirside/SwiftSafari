@@ -28,4 +28,4 @@ Contributions to SwiftSafari are welcome and encouraged! If you notice a bug, ha
 
 ### License
 
-SwiftSafari is licensed under the MIT License.
+SwiftSafari is licensed under the Chicken Dance License. License is included in the project folder entitled "License." In short, engage your inner chicken because it's time to dance! Dance instructions are located in the License folder in file entitled "DANCE."
