@@ -1,10 +1,12 @@
 # SwiftSafari
 
-SwiftSafari is a project that aims to provide an introduction to data science concepts and the Swift programming language through building various tools from scratch. These tools include neural networks, genetic algorithms, and more.
+SwiftSafari is a projectc that aims to provide an introduction to data science concepts and the Swift programming language through building various tools from scratch. These tools include neural networks, genetic algorithms, and more.
 
 The project is designed to be a follow-along project, meaning that you can work through the code examples and exercises alongside the accompanying blog posts and videos to get a deeper understanding of the concepts being covered.
 
-What is Swift Safari?
+You can find my full tutorials and explanations on my medium blog oceanexplains.medium.com
+
+### What is Swift Safari?
 
 Swift is such a spectacular language — easy to learn, highly functional, open-sourced — but people too often associate it with iOS development and fail to see its potential beyond iOS app development. To be fair, the language most comparable to Swift, Python, has such an extensive collection of features and packages that it’s hard not to want to dive into all of that. With Swift, you don’t get as diverse an ecosystem (yet!), but you DO get so much— an impossibly accessible user interface, package manager, and more!
 
@@ -14,16 +16,16 @@ If this sounds interesting to you, hop on board and get ready to build a virtual
 
 In this project, we will start by building a simple neural network, evolutionary algorithm, graphic ecosystem, and a user interface to wrap it all up! This is just the beginning, because you will be able to take it even further with your own modifications.
 
-Getting Started
+### Getting Started
 
 To get started with SwiftSafari, you can either follow along with oen of the project tutorials at oceanexplains.medium.com, or you can clone the project. You'll need to have either Xcode or Swift Playgrounds installed on your machine. Xcode is Apple's integrated development environment (IDE) for building apps for macOS, iOS, and other Apple platforms. You can download Xcode and Swift Playgrounds for free from the Mac App Store.
 
 Once you have Xcode installed, you can clone the SwiftSafari repository to your local machine, or download the project as a zip file and then unzip it.
 
-Contributing
+### Contributing
 
-Contributions to SwiftSafari are welcome and encouraged! If you notice a bug, have an idea for a new feature, or want to improve the documentation, feel free to open an issue or submit a pull request.
+Contributions to SwiftSafari are welcome and encouraged! If you notice a bug, have an idea for a new feature, or want to improve the documentation, feel free to open an issue or submit a pull request.I really just want to ghelp grease the gears and get Swift chugging along the data science train!
 
-License
+### License
 
 SwiftSafari is licensed under the MIT License.
