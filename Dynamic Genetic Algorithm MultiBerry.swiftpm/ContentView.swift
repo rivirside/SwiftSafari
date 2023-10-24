@@ -32,6 +32,7 @@ struct Game: View{
     
     @ObservedObject var population: Population = Population(
         numDots: 50,
+        numBerries: 100,
         targetPosition: Vector(x: 300, y: 300),
         width: 500,
         height: 500,
@@ -78,7 +79,6 @@ struct Game: View{
                             Text("kill")
                         }
                     }
-                    SaveOpenView(population: population)
                     
                     
                     
@@ -170,32 +170,17 @@ struct DotView: View {
     }
     
     
-    
-    
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
 }
 
 
-struct SaveOpenView: View {
-    @ObservedObject var population: Population
+
+struct BerryView: View {
+    @ObservedObject var berry: Berry
+    
     var body: some View {
-        VStack {
-            Button {
-            
-            } label: {
-                Text("Open")
-            }
-            Button {
-           
-            } label: {
-                Text("Save")
-            }
-        }
+        Circle()
+            .fill(Color.red)
+            .frame(width: CGFloat(berry.berrySize * 2), height: CGFloat(berry.berrySize * 2))
+            .position(x: CGFloat(berry.position.x), y: CGFloat(berry.position.y))
     }
-
 }

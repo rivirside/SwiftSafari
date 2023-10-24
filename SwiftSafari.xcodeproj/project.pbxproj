@@ -20,6 +20,7 @@
 		5417A9A8296758110078BB82 /* MouseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5417A9A7296758110078BB82 /* MouseView.swift */; };
 		5417A9AA296759010078BB82 /* FieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5417A9A9296759010078BB82 /* FieldView.swift */; };
 		5417A9AC29675D000078BB82 /* BerryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5417A9AB29675D000078BB82 /* BerryView.swift */; };
+		541BB7DF2AE761AF008D3651 /* SIR Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541BB7DE2AE761AF008D3651 /* SIR Model.swift */; };
 		54A755B02960E84500E91DE4 /* SwiftSafariApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A755AF2960E84500E91DE4 /* SwiftSafariApp.swift */; };
 		54A755B22960E84500E91DE4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A755B12960E84500E91DE4 /* ContentView.swift */; };
 		54A755B42960E84600E91DE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54A755B32960E84600E91DE4 /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 		5417A9A7296758110078BB82 /* MouseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MouseView.swift; sourceTree = "<group>"; };
 		5417A9A9296759010078BB82 /* FieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldView.swift; sourceTree = "<group>"; };
 		5417A9AB29675D000078BB82 /* BerryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BerryView.swift; sourceTree = "<group>"; };
+		541BB7DE2AE761AF008D3651 /* SIR Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SIR Model.swift"; sourceTree = "<group>"; };
 		54A755AC2960E84500E91DE4 /* SwiftSafari.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftSafari.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54A755AF2960E84500E91DE4 /* SwiftSafariApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSafariApp.swift; sourceTree = "<group>"; };
 		54A755B12960E84500E91DE4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 		5417A99F2963D3070078BB82 /* SideQuests */ = {
 			isa = PBXGroup;
 			children = (
+				541BB7DD2AE761A3008D3651 /* SIR Model */,
 				5417A9A02963D3120078BB82 /* Tic Tac Toe */,
 				5417A9992963C6510078BB82 /* Pong */,
 			);
@@ -115,6 +118,14 @@
 				5417A9A12963D3220078BB82 /* TicTacToe.swift */,
 			);
 			path = "Tic Tac Toe";
+			sourceTree = "<group>";
+		};
+		541BB7DD2AE761A3008D3651 /* SIR Model */ = {
+			isa = PBXGroup;
+			children = (
+				541BB7DE2AE761AF008D3651 /* SIR Model.swift */,
+			);
+			path = "SIR Model";
 			sourceTree = "<group>";
 		};
 		54A755A32960E84500E91DE4 = {
@@ -235,6 +246,7 @@
 				5417A9452960E9810078BB82 /* Neural Network.swift in Sources */,
 				5417A9952963B2680078BB82 /* Mouse.swift in Sources */,
 				5417A9AC29675D000078BB82 /* BerryView.swift in Sources */,
+				541BB7DF2AE761AF008D3651 /* SIR Model.swift in Sources */,
 				5417A9A22963D3220078BB82 /* TicTacToe.swift in Sources */,
 				54A755B22960E84500E91DE4 /* ContentView.swift in Sources */,
 				5417A991296385EA0078BB82 /* NN Visualization.swift in Sources */,

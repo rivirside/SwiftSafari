@@ -17,6 +17,10 @@ class Vector: ObservableObject {
         self.y = vector.y
     }
     
+    var magnitude: Float {
+        return sqrt((x * x) + (y * y))
+    }
+    
     func add(_ vector: Vector) {
         self.x += vector.x
         self.y += vector.y
@@ -169,7 +173,7 @@ class Dot: Identifiable, ObservableObject {
         self.position.add(velocity)
         
         // Update the energy based on the velocity and speed multiplier
-        self.energy -= self.velocity.magnitude() * speedMultiplier
+        self.energy -= self.velocity.magnitude * speedMultiplier
         
         // Check for nearby berries and consume them if close enough
         for (index, berry) in berries.enumerated() {
@@ -259,6 +263,8 @@ class Population: ObservableObject {
     
     @Published public var dead: Int = 0
     @Published public var winners: Int = 0
+    @Published public var berries: [Berry]
+
     
     public let survivalRate = 0.5
     public let width: Int
@@ -266,8 +272,10 @@ class Population: ObservableObject {
     public let dotSize: Int
     public let minTargetDistance: Float
     public let mutationRate: Float = 0.005
+    public let numBerries: Int
+
     
-    init(numDots: Int, targetPosition: Vector, width: Int, height: Int, dotSize: Int, minTargetDistance: Float) {
+    init(numDots: Int, numBerries: Int, targetPosition: Vector, width: Int, height: Int, dotSize: Int, minTargetDistance: Float) {
         self.dots = []
         
         
@@ -276,7 +284,16 @@ class Population: ObservableObject {
         self.height = height
         self.dotSize = dotSize
         self.minTargetDistance = minTargetDistance
+        self.numBerries = numBerries
         
+        self.berries = []
+        for _ in 0..<numBerries {
+            let berry = Berry(
+                position: randomVectorIn(minX: 10, maxX: Float(width - 10), minY: 10, maxY: Float(height - 10)),
+                energyValue: 10
+            )
+            self.berries.append(berry)
+        }
         
         for _ in 0..<numDots {
             // Initialize the dot with a neural network
@@ -303,7 +320,8 @@ class Population: ObservableObject {
                 maxHeight: height,
                 minTargetDistance:
                     minTargetDistance,
-                dotSize: dotSize
+                dotSize: dotSize,
+                berries: berries // Pass the berries array
             )
             self.dots.append(dot)
             
@@ -314,7 +332,6 @@ class Population: ObservableObject {
         dead = 0
         winners = 0
         
-        //iterate over dots with dot.update for the target location
         for dot in self.dots {
             if dot.dead {
                 dead += 1
@@ -324,8 +341,24 @@ class Population: ObservableObject {
             }
             dot.updateHistory(target: target)
             dot.update(target: target)
+            
+            // Energy consumption
+            dot.energy -= dot.speedMultiplier * dot.velocity.magnitude
+            if dot.energy <= 0 {
+                dot.dead = true
+            }
+            
+            // Check for berries within reach
+            for (index, berry) in berries.enumerated() {
+                if dot.position.distance(berry.position) <= Float(dotSize) + Float(berry.berrySize) {
+                    dot.energy += berry.energyValue
+                    berries.remove(at: index)
+                    break
+                }
+            }
         }
     }
+
     
     func allDead() -> Bool {
         //check for a pulse
@@ -365,6 +398,15 @@ class Population: ObservableObject {
         }
         self.counter = 0
         generation += 1
+        
+        berries.removeAll()
+        for _ in 0..<numBerries {
+            let berry = Berry(
+                position: randomVectorIn(minX: 10, maxX: Float(width - 10), minY: 10, maxY: Float(height - 10)),
+                energyValue: 10
+            )
+            berries.append(berry)
+        }
     }
     
     
@@ -656,16 +698,22 @@ struct NeuralNetwork {
             }
         }
     }
-    
-    
-    func save(to fileURL: URL) throws {
-        // Serialize the weights and biases to a Data object
-        let data = try NSKeyedArchiver.archivedData(withRootObject: self, requiringSecureCoding: true)
-        
-        // Write the Data object to the specified file URL
-        try data.write(to: fileURL)
-    }
-    
-    
-    
+
 }
+
+
+
+class Berry: Identifiable, ObservableObject {
+    public let id = UUID()
+    
+    @Published public var position: Vector
+    @Published public var energyValue: Float
+    public let berrySize: Int
+    
+    init(position: Vector, energyValue: Float, berrySize: Int = 5) {
+        self.position = position
+        self.energyValue = energyValue
+        self.berrySize = berrySize
+    }
+}
+

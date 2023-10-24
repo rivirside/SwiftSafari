@@ -31,7 +31,7 @@ struct Game: View{
     @State var counter = 0
     
     @ObservedObject var population: Population = Population(
-        numDots: 50,
+        numDots: 500,
         targetPosition: Vector(x: 300, y: 300),
         width: 500,
         height: 500,
@@ -110,7 +110,7 @@ struct Game: View{
                 population.selectNextGeneration()
                 resetView()
             } else {
-                if counter >= 1000 {
+                if counter >= 400 {
                     for dot in population.dots {
                         dot.dead = true
                     }
